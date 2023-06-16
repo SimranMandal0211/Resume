@@ -21,6 +21,58 @@ body::-webkit-scrollbar {
     display: none; 
 }
 
+/* dropdown bar */
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+    position: relative;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+i .no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
 /* Horizontal Lists */
 
 .horizontal-list {
@@ -58,6 +110,22 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+/* media query for nav links */
+
+@media only screen and (max-width: 572px) {
+
+    .bars {
+        display: inline-block;
+        left: 90%;
+        position: relative;
+    }
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+
 /* Name and Social Icons*/
 
 #name-social-container {
@@ -82,6 +150,14 @@ body::-webkit-scrollbar {
 .social-icons li a i:hover {
     box-shadow: 0px 0px 6px 4px rgba(99, 14, 139, 0.381);
 }
+
+/* media query for nav links */
+@media screen and (max-width:768px){
+    .nav-menu li a{
+        font-size: 1rem;
+    }
+}
+
 
 /* section */
 
@@ -149,6 +225,13 @@ section:nth-child(2n+1){
 .text-highlight {
     color: rgb(88, 12, 134);;
     font-weight: 600;
+}
+
+/* media query for about section */
+@media screen and (max-width:768px){
+    #about-para{
+        font-size:1.3rem;
+    }
 }
 
 /* skill section */
@@ -220,6 +303,13 @@ section:nth-child(2n+1){
 .ninty-percent{
     width: 90%;
     height: inherit;
+}
+
+/* skill media query */
+@media screen and (max-width:768px){
+    .skill-display{
+        flex-wrap:wrap;
+    }
 }
 
 /* work experience & education section */
@@ -339,6 +429,38 @@ section:nth-child(2n+1){
     color: rgb(88, 12, 134);
 }
 
+
+/* media query for education and experience */
+@media screen and (max-width:768px){
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+        margin: 1rem;
+    }
+    /* .timeline-box:nth-child(2n){
+        left: 12%;
+    } */
+    .timeline-box::after{
+        left: -12% !important;
+    }
+    .work-company-logo img{
+        width: 6vw;
+    }
+    html{
+        font-size: 15px;
+    }
+    /* .timeline-box:nth-child(2n+1)::after{
+        left: -12%;
+    }
+    .timeline-box:nth-child(2n)::after{
+        left: -12%;
+    } */
+
+}
+
 /* portfoli section */
 .portfolio{
     display: flex;
@@ -366,6 +488,21 @@ section:nth-child(2n+1){
     height:18rem; */
     width: 100%;
     height: 100%;
+}
+
+/* media query for portfoilo */
+@media screen and (max-width:768px){
+    .portfolio-container{
+        flex-direction: column;
+    }
+    .portfolio-container div{
+        height:40%;
+        width: 40%;
+    }
+    .portfolio-container img{
+        width: 120%;
+        height: 120%;
+    }
 }
 
 
@@ -480,4 +617,25 @@ ul{
 }
 #contact-social-media i:hover{
     color: white;
+}
+
+
+/* media queries for contact */
+@media screen and (max-width:768px){
+    #contact{
+        background: linear-gradient(to top right,#2857a4,#403066 90%);
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-form{
+        margin-bottom: 4rem;
+        width: 80%;
+    }
+    .contact-address{
+        width: 80%;
+    }
+    #contact-social-media i{
+        padding: 0 2rem;
+    }
 }
