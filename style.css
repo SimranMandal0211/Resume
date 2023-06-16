@@ -364,3 +364,117 @@ section:nth-child(2n+1){
     width: 100%;
     height: 100%;
 }
+
+
+/* contact section */
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+#contact{
+    color: white;
+    background: linear-gradient(90deg,#2857a4,#403066);
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:1rem;
+}
+#contact  span{
+    color: white;
+}
+#contact-heading{
+    font-size: 2rem;        
+    font-weight: 600;
+    padding: 2rem 0;
+    /* border: 2px solid gray; */
+}
+        
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid yellow; */
+    position: relative;
+}
+.contact-form input, textarea{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    background-color: transparent;
+    font-size: 1.1rem;
+    width:90%;
+    padding: .5rem;
+    margin: 1rem 0;
+    color: lightgray;
+}
+.contact-form button{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.4rem;
+    margin-top: 1rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: .2rem;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.contact-form{
+    padding: 0 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid palevioletred; */
+}
+.contact-address{
+    padding: 0 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid palevioletred; */
+}
+.contact-address h2{
+    font-size: 1.2rem;
+    line-height: 2;
+    margin: .5rem 0;
+}
+.contact-address p{
+    font-size: 1rem;
+    color: lightgray;
+    max-width: 50rem;
+    min-width: auto;
+}
+.contact-address li{
+    padding: .3rem 0 ;
+}
+.contact-address span{
+    margin: 1rem;
+    color: lightgray;
+}
+
+#contact-social-media{
+    margin: 2rem 0;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+#contact-social-media i{
+    display: inline-block;
+    padding: 1rem;
+    color: lightgray;
+    cursor: pointer;
+}
+#contact-social-media i:hover{
+    color: white;
+}
