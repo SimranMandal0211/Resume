@@ -198,6 +198,9 @@ section:nth-child(2n+1){
 .mb-purple{
     background-color: purple;
 }
+.mb-maroon{
+    background-color: rgb(131, 11, 53);
+}
 .mb-green{
     background-color: green;
 }
@@ -244,7 +247,7 @@ section:nth-child(2n+1){
 }
 .work-company h3{
     margin: .4rem 0;
-    color: blue;
+    color: rgb(88, 12, 134);
     font-size: 1.5rem;
     font-weight: bold;
     text-align: end;
@@ -252,7 +255,7 @@ section:nth-child(2n+1){
 .work-company h4{
     margin: .3rem 0;
     font-size: 1rem;
-    color: orangered;
+    color: rgb(225, 207, 5);
     font-weight: 600;
     text-align: end;
 }
@@ -333,7 +336,7 @@ section:nth-child(2n+1){
     z-index: 2;
 }
 .timeline-traveller i{
-    color: #2857a4;
+    color: rgb(88, 12, 134);
 }
 
 /* portfoli section */
