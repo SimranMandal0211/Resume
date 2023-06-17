@@ -225,6 +225,24 @@ section:nth-child(2n+1){
 .text-highlight {
     color: rgb(88, 12, 134);;
     font-weight: 600;
+    position: relative;
+}
+
+.text-highlight::after{
+    content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the value to control the distance of the underline from the text */
+  width: 100%;
+  height: 2px; /* Adjust the value to control the thickness of the underline */
+  background-color: rgb(88, 12, 134);; /* Adjust the color of the underline */
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.5s ease;
+}
+
+.text-highlight:hover::after {
+  transform: scaleX(1);
 }
 
 /* media query for about section */
